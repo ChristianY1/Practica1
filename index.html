@@ -5,17 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicación Web Película</title>
     <link rel="stylesheet" href="estilo.css">
+    <script type = "text/javascript" src="code.js"></script>
 </head>
 <body>
+    <label>Título</label>
+    <input type="text"  id="titulo">
+    <label>ID</label>
+    <input type="text" id="id">
+    <input type="button" value = "Mostrar Datos" id="md" onclick="buscarPeliculaPorTitulo()">
     <table>
-        <thead>
-            <tr>
-                <th>Título</th>
-                <th>Año</th>
-                <th>Tipo</th>
-                <th>Poster</th>
-        </thead>
-        </tr> 
+        <tr>
+            <td>
+                <table id="mia" class = "dat">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Titulo</th>
+                            <th>Año</th>
+                            <th>Tipo</th>
+                            <th>Poster</th>
+                        </tr>
+
+                    </thead>
+                    <tbody id="informacion">
+
+                    </tbody>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="detalles">
+
+                </div>
+            </td>
+        </tr>
+        
     </table>
+    
+    
+    
 </body>
 </html>
