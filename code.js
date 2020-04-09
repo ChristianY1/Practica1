@@ -3,7 +3,7 @@ function buscarPeliculaPorTitulo(){
     var detalles = "";
     if(titulo == ""){
         detalles = "<tr>" + 
-        "<td colspan = '5'> Sin información disponible..</td>"+
+        "<td colspan = '5'> "+"Sin información disponible.."+"</td>"+
         "</tr>";
         document.getElementById("informacion").innerHTML = detalles;
     }else{
@@ -17,25 +17,37 @@ function buscarPeliculaPorTitulo(){
             if (this.readyState == 4 && this.status == 200) {
                 var data = JSON.parse(this.responseText)
                 //console.log(data);
-                data.Search.forEach(movie =>{
-                    detalles += "<tr>" + "<td>" + movie.imdbID + "</td>" +
-                                         "<td>" + movie.Title + "</td>" + 
-                                         "<td>" + movie.Year + "</td>" +
-                                         "<td>" + movie.Type + "</td>" +
-                                         "<td><img src=" + movie.Poster + "></td>" +
-                                "</tr>";
-
-                }
-                );
+                data.Search.forEach(movie => {
+                    detalles +="<td>" + 
+                                        "<tr><img src= "+ movie.Poster + "></tr>" + "<br>"+
+                                        "<tr>" + movie.Title + "</tr>" + 
+                                        "<tr>" + movie.Year + "</tr>" +
+                                        "<tr>" + movie.Type + "</tr>"+
+                                        "<tr>"+ "<input type = button onclick =\" buscarPeliculaPorID('"+ movie.imdbID +"')\" value = ver mas >" +"</tr>"
+                                        
+                               " <td>";
+                    
+                });
+                
+               
                 document.getElementById("informacion").innerHTML = detalles;
             }
         };
-        xmlhttp.open("GET","http://www.omdbapi.com/?i=tt3896198&apikey=d358b412&s=" + titulo + "&plot=full",true);
+        
+        xmlhttp.open("GET","http://www.omdbapi.com/?i=tt3896198&apikey=d358b412&s="+ titulo + "&plot=full",true);
         xmlhttp.send();
+       
+        
     }
 }
+function buscarPeliculaPorID(id){
+    var idPelicula = id;
+    var detalles2 = "";
 
-function hola(){
-    var cosa = document.getElementById("titulo").value;
-    console.log(cosa);
+
+    
+
+    //var idPelicula = document.getElementById("id").value;
+    //xmlhttp.open("GET","http://www.omdbapi.com/?i="+idPelicula+"&apikey=d358b412",true);
+    //xmlhttp.send();
 }
