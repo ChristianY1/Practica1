@@ -29,9 +29,7 @@ body,#busqueda{
 #detalles{
     width: 326px;
     height: 500px;
-    float: left;
-    
-    
+    float: left;  
 
 }
 
@@ -51,4 +49,13 @@ table{
 }
 td{
     width: 40%;
+}
+
+.informacion::-webkit-scrollbar{
+    width: 7px;
+    
+}
+.informacion::-webkit-scrollbar-thumb{
+    background: orange;
+    border-radius: 5px;
 }

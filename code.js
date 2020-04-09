@@ -33,7 +33,7 @@ function buscarPeliculaPorTitulo(){
                     "<tr>"+"<td>" + vector[i][1] +"</td>"+"</tr>" + 
                     "<tr>"+"<td>" + vector[i][2] +"</td>"+ "</td>" +
                     "<tr>"+"<td>" + vector[i][3] + "</td>"+"</td>" +
-                    "<tr>"+"<td>"+ "<input type = button onclick =\" buscarPeliculaPorID('"+ vector[i][4]+"')\" value = detalles >" +"</td>" +"<tr>"+
+                    "<tr>"+"<td>"+ "<input type = button onclick =\" buscarPeliculaPorID('"+ vector[i][4]+"')\" value = Detalles >" +"</td>" +"<tr>"+
                     "</table>"+"<br>";
                    
                     
