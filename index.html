@@ -8,25 +8,34 @@
     <script type = "text/javascript" src="code.js"></script>
 </head>
 <body>
-    <label>Título</label>
+    <div id="busqueda">
+        <label>Título:</label>
     <input type="text"  id="titulo">
     
     <input type="button" value = "Mostrar Datos" id="md" onclick="buscarPeliculaPorTitulo()"> <br>
 
-    <label>ID</label>
+    <label>ID:</label>
     <input type="text" id="idd">
     <input type="button" value = "Buscar" id="md" onclick="buscarPeliculaPorID2()">
 
+        
+    </div>
+    
 
     <div id="informacion">
         
     </div> 
     <div id = "detalles">
+        
 
     </div>
-    <div id="paginas">
+    <footer id="paginas">
         <input type="button" value="1" onclick="buscarPeliculaPorTitulo()">
         <input type="button" value="2" onclick="segundaParte()">
+
+    </footer>
+    <div >
+        
     </div>
 </body>
 </html>

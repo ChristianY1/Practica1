@@ -28,13 +28,13 @@ function buscarPeliculaPorTitulo(){
                 console.log(vector)
                 console.log(vector.length)
                 for (var i = 0; i < 5; i++) {
-                    detalles +="<td>" + 
-                    "<tr><img src= "+ vector[i][0] + " width=150  ></tr>" + 
-                    "<tr>" + vector[i][1] + "</tr>" + 
-                    "<tr>" + vector[i][2] + "</tr>" +
-                    "<tr>" + vector[i][3] + "</tr>"+
-                    "<tr>"+ "<input type = button onclick =\" buscarPeliculaPorID('"+ vector[i][4]+"')\" value = ver mas >" +"</tr>"
-                    "<td>"+"<br>";
+                    detalles +="<table>" + 
+                    "<td><img src= "+ vector[i][0] + " width=150  ></tr>" + 
+                    "<tr>"+"<td>" + vector[i][1] +"</td>"+"</tr>" + 
+                    "<tr>"+"<td>" + vector[i][2] +"</td>"+ "</td>" +
+                    "<tr>"+"<td>" + vector[i][3] + "</td>"+"</td>" +
+                    "<tr>"+"<td>"+ "<input type = button onclick =\" buscarPeliculaPorID('"+ vector[i][4]+"')\" value = detalles >" +"</td>" +"<tr>"+
+                    "</table>"+"<br>";
                    
                     
                 }
@@ -163,13 +163,13 @@ function segundaParte(){
                 console.log(vector)
                 console.log(vector.length)
                 for (var i = 5; i < vector.length; i++) {
-                    detalles +="<td>" + 
-                    "<tr><img src= "+ vector[i][0] + " width=150  ></tr>" + 
-                    "<tr>" + vector[i][1] + "</tr>" + 
-                    "<tr>" + vector[i][2] + "</tr>" +
-                    "<tr>" + vector[i][3] + "</tr>"+
-                    "<tr>"+ "<input type = button onclick =\" buscarPeliculaPorID('"+ vector[i][4]+"')\" value = ver mas >" +"</tr>"
-                    "<td>"+"<br>";
+                    detalles +="<table>" + 
+                    "<td><img src= "+ vector[i][0] + " width=150  ></tr>" + 
+                    "<tr>"+"<td>" + vector[i][1] +"</td>"+"</tr>" + 
+                    "<tr>"+"<td>" + vector[i][2] +"</td>"+ "</td>" +
+                    "<tr>"+"<td>" + vector[i][3] + "</td>"+"</td>" +
+                    "<tr>"+"<td>"+ "<input type = button onclick =\" buscarPeliculaPorID('"+ vector[i][4]+"')\" value = detalles >" +"</td>" +"<tr>"+
+                    "</table>"+"<br>";
                    
                     
                 }

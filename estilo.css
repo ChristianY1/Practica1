@@ -1,18 +1,54 @@
-body{
-    width: 80%;
+body,#busqueda{
+    width: 90%;
     position: center;
-    border: solid 1px black;
+    
+    margin-left: 10%;
 }
 
-table, th, td{
-    border: solid 1px black;
-    position: relative;
-    border-collapse: collapse;
-    
+#titulo{
+    margin-left: 10px;
+    margin-top: 7px;
 }
-div#detalles{
-    position: relative;
-    left: 50%;
+#idd{
+    margin-left: 33px;
+    margin-top: 10px;
+}
+
+#paginas{
+    position: center;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40%;
+}
+
+#informacion{
+    
+    width: 60%;
+    float: left;
+}
+#detalles{
+    width: 326px;
+    height: 500px;
+    float: left;
+    
+    
+
+}
+
+img{
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+}
+table{
+    
     width: 30%;
-    border: solid 1px black;
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+td{
+    width: 40%;
 }
