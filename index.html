@@ -10,47 +10,19 @@
 <body>
     <label>Título</label>
     <input type="text"  id="titulo">
+    
+    <input type="button" value = "Mostrar Datos" id="md" onclick="buscarPeliculaPorTitulo()"> <br>
+
     <label>ID</label>
-    <input type="text" id="id">
-    <input type="button" value = "Mostrar Datos" id="md" onclick="buscarPeliculaPorTitulo()">
-    <table>
-        <tr>
-            <td>
-                <table id="mia" class = "dat">
-                    <thead>
-                        
-                        <tr>
-                            <td>a</td>
-                            <td>b</td>
-                            <td>c</td>
-                        </tr>
-                        <tr>
-                            <td><input type="text"></td>
-                            <td>b2</td>
-                            <td>c2</td>
-                        </tr>
-                        
+    <input type="text" id="idd">
+    <input type="button" value = "Buscar" id="md" onclick="buscarPeliculaPorID2()">
 
-                    </thead>
-                    <tbody id="informacion">
 
-                    </tbody>
-
-                </table>
-            </td>
-        </tr>
-        <div id="detalles">
-            <table>
-                <tbody id = "verMas">
-
-                </tbody>
-            </table>
-            
-        </div>
+    <div id="informacion">
         
-    </table>
-    
-    
-    
+    </div> 
+    <div id = "detalles">
+
+    </div>
 </body>
 </html>

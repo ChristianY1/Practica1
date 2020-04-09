@@ -1,9 +1,18 @@
+body{
+    width: 80%;
+    position: center;
+    border: solid 1px black;
+}
+
 table, th, td{
     border: solid 1px black;
+    position: relative;
     border-collapse: collapse;
     
 }
-div{
+div#detalles{
     position: relative;
-    left: 80%;
+    left: 50%;
+    width: 30%;
+    border: solid 1px black;
 }
